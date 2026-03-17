@@ -1,0 +1,9 @@
+$kind: http-request
+name: Logout
+method: POST
+url: '{{baseUrl}}/auth/logout'
+order: 4000
+description: |-
+  Logout the currently authenticated user. This is a stateless mock — it simply acknowledges the logout.
+
+  **Requires:** Bearer token authentication.

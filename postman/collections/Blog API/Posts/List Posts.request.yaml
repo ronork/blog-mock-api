@@ -1,0 +1,30 @@
+$kind: http-request
+name: List Posts
+method: GET
+url: '{{baseUrl}}/posts'
+order: 1000
+auth:
+  type: noauth
+queryParams:
+  - key: page
+    value: '1'
+    description: 'Page number (default: 1)'
+  - key: limit
+    value: '10'
+    description: 'Results per page, max 50 (default: 10)'
+  - key: tag
+    value: ''
+    description: Filter posts by tag
+    disabled: true
+  - key: published
+    value: 'true'
+    description: Set to false to include unpublished posts
+    disabled: true
+description: |-
+  Returns a paginated list of blog posts. By default only published posts are returned.
+
+  **Query parameters:**
+  - `page` — page number (default: 1)
+  - `limit` — results per page, max 50 (default: 10)
+  - `tag` — filter by tag string
+  - `published` — set to `false` to include unpublished posts

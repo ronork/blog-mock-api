@@ -1,0 +1,26 @@
+$kind: http-request
+name: Create Post
+method: POST
+url: '{{baseUrl}}/posts'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "title": "My First Blog Post",
+      "content": "This is the full content of the blog post. It can be as long as needed.",
+      "excerpt": "A short summary of the post.",
+      "tags": ["typescript", "express", "api"],
+      "published": true
+    }
+description: |-
+  Create a new blog post. The authenticated user becomes the author.
+
+  **Required fields:** `title`, `content`
+
+  **Optional fields:** `excerpt` (defaults to first 200 chars of content), `tags` (array, default `[]`), `published` (default `false`), `coverImage`
+
+  **Requires:** Bearer token authentication.

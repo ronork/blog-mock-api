@@ -1,0 +1,8 @@
+$kind: http-request
+name: List Users
+method: GET
+url: '{{baseUrl}}/users'
+order: 1000
+auth:
+  type: noauth
+description: Returns a list of all registered users (passwords excluded).

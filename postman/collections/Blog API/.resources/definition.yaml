@@ -1,0 +1,27 @@
+$kind: collection
+name: Blog API
+description: |-
+  A RESTful Blog API built with Express and TypeScript. Supports authentication via JWT Bearer tokens, full CRUD for posts, comments, and user profile management.
+
+  **Base URL:** `{{baseUrl}}`
+
+  ## Authentication
+  Protected endpoints require a Bearer token in the `Authorization` header. Obtain a token via `POST /auth/login` or `POST /auth/register`, then set it as the `token` collection variable.
+auth:
+  type: bearer
+  credentials:
+    - key: token
+      value: '{{token}}'
+variables:
+  - key: baseUrl
+    value: 'http://localhost:3000'
+  - key: token
+    value: ''
+  - key: refreshToken
+    value: ''
+  - key: postId
+    value: ''
+  - key: commentId
+    value: ''
+  - key: userId
+    value: ''

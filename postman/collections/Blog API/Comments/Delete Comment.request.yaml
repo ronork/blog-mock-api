@@ -1,0 +1,9 @@
+$kind: http-request
+name: Delete Comment
+method: DELETE
+url: '{{baseUrl}}/posts/{{postId}}/comments/{{commentId}}'
+order: 3000
+description: |-
+  Delete a comment by ID. Only the comment's author can delete it. Returns `204 No Content` on success.
+
+  **Requires:** Bearer token authentication (must be the comment author).

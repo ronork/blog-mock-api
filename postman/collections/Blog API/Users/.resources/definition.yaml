@@ -1,0 +1,3 @@
+$kind: collection
+name: Users
+description: 'User profile endpoints. Listing and viewing profiles are public. Updating your own profile requires authentication.'

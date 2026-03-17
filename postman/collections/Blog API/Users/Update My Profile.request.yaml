@@ -1,0 +1,22 @@
+$kind: http-request
+name: Update My Profile
+method: PATCH
+url: '{{baseUrl}}/users/me'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Jane Smith",
+      "bio": "Software engineer and blogger.",
+      "avatarUrl": "https://example.com/avatar.jpg"
+    }
+description: |-
+  Update the authenticated user's own profile. All fields are optional.
+
+  **Updatable fields:** `name`, `bio`, `avatarUrl`
+
+  **Requires:** Bearer token authentication.

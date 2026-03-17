@@ -1,0 +1,9 @@
+$kind: http-request
+name: Get Post
+method: GET
+url: '{{baseUrl}}/posts/{{postId}}'
+order: 2000
+auth:
+  type: noauth
+description: |-
+  Fetch a single post by its ID. Also increments the post's view count. Returns the post with the author's profile embedded.

@@ -1,0 +1,9 @@
+$kind: http-request
+name: List Comments
+method: GET
+url: '{{baseUrl}}/posts/{{postId}}/comments'
+order: 1000
+auth:
+  type: noauth
+description: |-
+  Returns all comments for a given post, sorted by newest first. Each comment includes the author's profile.

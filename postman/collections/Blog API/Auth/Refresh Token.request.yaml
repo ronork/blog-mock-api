@@ -1,0 +1,20 @@
+$kind: http-request
+name: Refresh Token
+method: POST
+url: '{{baseUrl}}/auth/refresh'
+order: 3000
+auth:
+  type: noauth
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "refreshToken": "{{refreshToken}}"
+    }
+description: |-
+  Exchange a valid refresh token for a new access token.
+
+  **Required:** `refreshToken` in the request body.

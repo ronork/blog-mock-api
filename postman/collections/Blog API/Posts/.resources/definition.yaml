@@ -1,0 +1,3 @@
+$kind: collection
+name: Posts
+description: 'CRUD operations for blog posts. Listing and reading are public. Creating, updating, and deleting require authentication. Authors can only edit or delete their own posts.'

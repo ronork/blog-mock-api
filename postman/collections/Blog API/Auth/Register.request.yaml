@@ -1,0 +1,24 @@
+$kind: http-request
+name: Register
+method: POST
+url: '{{baseUrl}}/auth/register'
+order: 1000
+auth:
+  type: noauth
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "password": "password123"
+    }
+description: |-
+  Register a new user account.
+
+  **Required fields:** `name`, `email`, `password`
+
+  Returns the created user object along with a JWT `token` (24h) and `refreshToken` (7d).
