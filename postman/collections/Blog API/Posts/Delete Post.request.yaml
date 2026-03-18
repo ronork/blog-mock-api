@@ -1,9 +1,4 @@
 $kind: http-request
-name: Delete Post
+url: "{{baseUrl}}/posts/{{postId}}"
 method: DELETE
-url: '{{baseUrl}}/posts/{{postId}}'
 order: 5000
-description: |-
-  Delete a post by ID. Only the post's author can delete it. Returns `204 No Content` on success.
-
-  **Requires:** Bearer token authentication (must be the post author).

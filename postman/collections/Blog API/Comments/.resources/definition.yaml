@@ -1,3 +1,4 @@
 $kind: collection
-name: Comments
-description: 'Manage comments on blog posts. Listing comments is public. Adding and deleting comments require authentication.'
+description: Manage comments on blog posts. Listing comments is public. Adding
+  and deleting comments require authentication.
+order: 2000

@@ -1,22 +1,9 @@
 $kind: http-request
-name: Update Post
+url: "{{baseUrl}}/posts/{{postId}}"
 method: PUT
-url: '{{baseUrl}}/posts/{{postId}}'
-order: 4000
 headers:
-  - key: Content-Type
-    value: application/json
+  Content-Type: application/json
 body:
   type: json
-  content: |-
-    {
-      "title": "Updated Post Title",
-      "content": "Updated content for the blog post.",
-      "published": true
-    }
-description: |-
-  Update an existing post. Only the post's author can update it. All fields are optional — only provided fields will be updated.
-
-  **Updatable fields:** `title`, `content`, `excerpt`, `tags`, `published`, `coverImage`
-
-  **Requires:** Bearer token authentication (must be the post author).
+  content: ""
+order: 4000

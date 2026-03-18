@@ -1,6 +1,13 @@
 # Use this workspace to collaborate
 workspace:
-  id: 8651310a-de81-46c2-b720-5cec8bd6f15a
+  id: ead8a81e-f587-479b-968f-26b1e120403a
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+cloudResources:
+  collections:
+    ../postman/collections/Blog API: 1562538-993a4e80-2daf-41dc-9e48-cbef05926b85
+  environments:
+    ../postman/environments/beta.environment.yaml: 5736ef1c-c15e-44f5-bcb6-f75992fb9be6
 
 # All resources in the `postman/` folder are automatically registered in Local View.
 # Point to additional files outside the `postman/` folder to register them individually. Example:

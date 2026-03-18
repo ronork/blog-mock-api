@@ -1,9 +1,4 @@
 $kind: http-request
-name: Get User
+url: "{{baseUrl}}/users/{{userId}}"
 method: GET
-url: '{{baseUrl}}/users/{{userId}}'
 order: 2000
-auth:
-  type: noauth
-description: |-
-  Fetch a user's public profile by ID. Also returns the user's published posts sorted by newest first.

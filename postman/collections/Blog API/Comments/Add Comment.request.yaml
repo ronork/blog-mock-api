@@ -1,20 +1,9 @@
 $kind: http-request
-name: Add Comment
+url: "{{baseUrl}}/posts/{{postId}}/comments"
 method: POST
-url: '{{baseUrl}}/posts/{{postId}}/comments'
-order: 2000
 headers:
-  - key: Content-Type
-    value: application/json
+  Content-Type: application/json
 body:
   type: json
-  content: |-
-    {
-      "body": "Great post! Really enjoyed reading this."
-    }
-description: |-
-  Add a comment to a post. The authenticated user becomes the comment author.
-
-  **Required fields:** `body`
-
-  **Requires:** Bearer token authentication.
+  content: ""
+order: 2000

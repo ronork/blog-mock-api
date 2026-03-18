@@ -1,0 +1,11 @@
+name: beta
+values:
+  - key: url
+    value: ''
+    enabled: true
+  - key: token
+    enabled: true
+    secret: true
+  - key: variable_key
+    value: ''
+    enabled: true

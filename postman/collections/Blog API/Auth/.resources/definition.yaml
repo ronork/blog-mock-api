@@ -1,3 +1,4 @@
 $kind: collection
-name: Auth
-description: 'Authentication endpoints — register, login, token refresh, logout, and current user profile.'
+description: Authentication endpoints — register, login, token refresh, logout,
+  and current user profile.
+order: 1000

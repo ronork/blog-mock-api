@@ -1,9 +1,4 @@
 $kind: http-request
-name: Get Current User
+url: "{{baseUrl}}/auth/me"
 method: GET
-url: '{{baseUrl}}/auth/me'
 order: 5000
-description: |-
-  Returns the profile of the currently authenticated user (password excluded).
-
-  **Requires:** Bearer token authentication.

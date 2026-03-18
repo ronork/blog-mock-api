@@ -1,21 +1,9 @@
 $kind: http-request
-name: Login
+url: "{{baseUrl}}/auth/login"
 method: POST
-url: '{{baseUrl}}/auth/login'
-order: 2000
-auth:
-  type: noauth
 headers:
-  - key: Content-Type
-    value: application/json
+  Content-Type: application/json
 body:
   type: json
-  content: |-
-    {
-      "email": "jane@example.com",
-      "password": "password123"
-    }
-description: |-
-  Authenticate with email and password.
-
-  Returns a JWT `token` (24h) and `refreshToken` (7d). Store the token in the `token` collection variable to authenticate subsequent requests.
+  content: ""
+order: 2000
